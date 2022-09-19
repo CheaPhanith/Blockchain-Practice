@@ -9,4 +9,4 @@ export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}crypto-config/peerOrganizations/org1.ex
 export ORDERER_GENERAL_LOCALMSPDIR=${PWD}/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp
 peer lifecycle chaincode install mycc.tar.gz --peerAddresses localhost:7051
 peer lifecycle chaincode queryinstalled --peerAddresses localhost:7051
-peer lifecycle chaincode approveformyorg  -o localhost:7050 --channelID mychannel --name mycc --version 1.0 --init-required --package-id $PACKAGE_ID --sequence 1 
+peer lifecycle chaincode approveformyorg  -o localhost:7050 --channelID mychannel --name mycc --version 1 --init-required --package-id $PACKAGE_ID --sequence 1 
